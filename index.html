@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main id="main-body" class="items-center flex justify-center min-h-screen bg-cyan-200 text-center">
+        <div id="counter-body" class="counter space-y-6">
+            <div class="heading text-6xl uppercase font-bold ">
+                Counter
+            </div>
+            <div id="display" class="count text-6xl font-bold">
+                0
+            </div>
+            <div class="buttons space-x-4">
+                <button onclick="decrease()" id="decrease-button"
+                    class="uppercase text-xl font-bold px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-900 hover:text-white duration-500">
+                    decrease
+                </button>
+                <button onclick="reset()" id="reset-button"
+                    class="uppercase text-xl font-bold px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-900 hover:text-white duration-500">
+                    reset
+                </button>
+                <button onclick="increase()" id="increase-button"
+                    class="uppercase text-xl font-bold px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-900 hover:text-white duration-500">
+                    increase
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./script/clicked.js"></script>
+    <script src="./script/getValue.js"></script>
+    <script src="./script/showCount.js"></script>
+    <script src="./script/setValue.js"></script>
+</body>
+
+</html>
